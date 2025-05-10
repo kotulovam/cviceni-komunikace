@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 /*
 Zadání: Začneme velmi jednoduše. Zařiďte, aby se po kliknutí na tlačítko zobrazilo jméno, které je
@@ -7,7 +7,7 @@ Zadání: Začneme velmi jednoduše. Zařiďte, aby se po kliknutí na tlačítk
 */
 
 export const Ukol1 = () => {
-  const [jmeno, setJmeno] = useState("Jirka");
+  const [jmeno, setJmeno] = useState('Jirka');
 
   return (
     <>
@@ -15,10 +15,10 @@ export const Ukol1 = () => {
         <strong>{jmeno}</strong>
       </p>
       <div>
-        <button>Jirka</button>
-        <button>Honza</button>
-        <button>Tomáš</button>
-        <button>Šimon</button>
+        <button onClick={(e) => setJmeno(e.target.textContent)}>Jirka</button>
+        <button onClick={(e) => setJmeno(e.target.textContent)}>Honza</button>
+        <button onClick={(e) => setJmeno(e.target.textContent)}>Tomáš</button>
+        <button onClick={(e) => setJmeno(e.target.textContent)}>Šimon</button>
       </div>
     </>
   );
